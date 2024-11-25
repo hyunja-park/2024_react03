@@ -13,8 +13,10 @@ function App() {
           <Routes>
               {/* path='/'는 첫페이을 의미한다.(홈페이지) */}
               <Route path='/' element={<DayList />} />
+
               {/* 동적라우딩 */}
               <Route path='/day/:day' element={<Day />} />
+              
           </Routes>
       </div>
     </BrowserRouter>
